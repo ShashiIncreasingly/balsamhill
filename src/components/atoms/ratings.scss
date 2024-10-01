@@ -1,0 +1,32 @@
+.inc_product_desc_ratings_block {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media screen and (max-width: 800px) {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+
+.inc_product_ratings_count {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 5px;
+  white-space: nowrap;
+  line-height: 30px;
+  height: 23px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Lato, sans-serif;
+  color: #000;
+}
+
+.inc_product_desc_ratings_block.inc_modal {
+  justify-content: flex-start;
+
+  margin-bottom: 18px;
+}

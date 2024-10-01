@@ -1,0 +1,53 @@
+{
+  "name": "balsam-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "html-react-parser": "^3.0.4",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "prettier": "^2.8.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-debounce-input": "^3.3.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.3",
+    "react-modal": "^3.16.1",
+    "react-modern-drawer": "^1.1.2",
+    "react-responsive": "^9.0.0",
+    "react-simple-star-rating": "^5.1.6",
+    "react-swipeable": "^7.0.0",
+    "swiper": "^8.4.4",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13",
+    "vite-tsconfig-paths": "^4.0.7",
+    "zustand": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@vitejs/plugin-react": "^2.2.0",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.4",
+    "vite": "^3.2.3",
+    "vite-plugin-purgecss": "^0.2.12"
+  }
+}

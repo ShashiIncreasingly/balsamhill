@@ -1,0 +1,594 @@
+.inc_product_block {
+  padding: 15px 15px 15px;
+  width: 280px;
+  margin: 0px 10px auto;
+  box-sizing: border-box;
+  max-height: 100%;
+  position: relative;
+  background: #ffffff;
+  font-family: Lato;
+
+  *[tabindex]:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 966px) {
+    margin: 20px 10px auto 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 0px;
+    width: 100%;
+    min-height: auto;
+    padding: 15px 10px 15px;
+  }
+
+  .inc_hide_attribute {
+    display: none;
+  }
+
+  .inc_product_info_main_block {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      width: 100%;
+    }
+
+    .inc_product_add_checkbox_img {
+      height: 30px;
+      width: 30px;
+      background: #eaeaea;
+      border: 1px solid #666666;
+      box-shadow: inset 0px 5px 4px rgba(216, 216, 216, 0.7);
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      z-index: 1;
+      cursor: pointer;
+      outline: #ffffff solid 5px;
+      padding: 0 !important;
+
+      &.checked {
+        background: #363636 url(https://usaincreasingly.increasingly.co/Implementation/b58lus/images/img_sprite.svg) -8px 0px/42px no-repeat;
+        box-shadow: none;
+
+        @media (hover: hover) and (min-width: 1280px) {
+          &:hover {
+            box-shadow: 0 0 3px 0 rgba(69, 69, 69, 0.5);
+            color: #fff;
+            background-color: #5a5a5a;
+            border-color: #5a5a5a;
+          }
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        left: 10px;
+        right: auto;
+        top: 40%;
+      }
+    }
+
+    .inc_product_img_block {
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 800px) {
+        flex-basis: 45%;
+      }
+
+      .inc_product_img_main_block {
+        position: relative;
+
+        a {
+          border: none;
+        }
+
+        @media screen and (max-width: 800px) {
+          height: 100%;
+        }
+
+        .inc_product_img_main_img {
+          height: 250px;
+          cursor: pointer;
+
+          @media screen and (max-width: 800px) {
+            width: 90%;
+            height: 150px;
+            margin: 0 auto;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            max-width: 100%;
+            object-fit: contain;
+            box-sizing: border-box;
+
+            @media screen and (max-width: 800px) {
+              padding: 0 0 0 28px;
+            }
+          }
+        }
+      }
+    }
+
+    .inc_product_desc_block {
+      text-align: center;
+
+      @media screen and (max-width: 800px) {
+        flex-basis: 55%;
+        padding-left: 10px;
+      }
+
+      .inc_product_desc_title_text {
+        text-decoration: none;
+        min-height: 44px;
+        max-height: 44px;
+        display: block;
+        font-size: 16px;
+        color: #363636;
+        margin-top: 4px;
+        margin-bottom: 7px;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-weight: bold;
+
+        @media screen and (max-width: 800px) {
+          text-align: left;
+          margin-top: 0px;
+        }
+
+        strong {
+          text-transform: capitalize;
+          color: #8f6c2c;
+        }
+      }
+
+      .inc_product_desc_ratings_block {
+        margin-bottom: 7px;
+        max-height: 25px;
+      }
+
+      .inc_product_desc_range {
+        font-size: 16px;
+        color: #363636;
+        line-height: 24px;
+        margin-bottom: 7px;
+        min-height: 25px;
+        font-family: Lato;
+
+        @media screen and (max-width: 800px) {
+          text-align: left;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .inc_product_desc_price_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 7px;
+        font-family: Lato;
+
+        @media screen and (max-width: 800px) {
+          justify-content: flex-start;
+        }
+
+        .inc_product_active_price_block {
+          color: #999;
+
+          &.strikethrough {
+            text-decoration: line-through;
+          }
+        }
+
+        .inc_product_active_regular_block {
+          &.both {
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .inc_modal_block {
+        width: 100%;
+
+        .inc_modal_qty {
+          display: flex;
+          background: 0 0;
+          margin-bottom: 15px;
+          margin-top: 15px;
+          position: relative;
+          align-items: center;
+
+          .inc_modal_qty_input_block {
+            height: 46px;
+            width: 55px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+
+            input {
+              border: 1px solid #949494;
+              text-align: center;
+              background: 0 0;
+              color: #363636;
+              font-size: 16px;
+              font-weight: 700;
+              font-family: Lato, sans-serif;
+              width: 100%;
+              height: 100%;
+              outline: none;
+              border-radius: 0;
+              -moz-appearance: textfield;
+              appearance: textfield;
+
+              &:focus {
+                box-shadow: none;
+                border-color: #8f6c2c;
+              }
+            }
+
+            input[type='number']::-webkit-inner-spin-button,
+            input[type='number']::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              appearance: none;
+              margin: 0;
+            }
+          }
+
+          .inc_modal_qty_minus,
+          .inc_modal_qty_plus {
+            height: 46px;
+            width: 46px;
+            border: none;
+            cursor: pointer;
+            border: 1px solid #949494;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+              border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+            &:hover,
+            &:focus {
+              background-color: #f4f4f4;
+              border-color: #949494;
+            }
+          }
+
+          .inc_modal_qty_minus {
+            border-right: none;
+            background: url(https://www.increasingly.co/Implementation/b58luk/images/img_sprite.svg) 7px -340px/32px no-repeat transparent;
+          }
+
+          .inc_modal_qty_plus {
+            border-left: none;
+            background: url(https://www.increasingly.co/Implementation/b58luk/images/img_sprite.svg) 5px -330px/35px no-repeat transparent;
+          }
+        }
+
+        .inc_modal_select_button {
+          width: 100%;
+          height: 48px;
+          background: transparent;
+          cursor: pointer;
+          color: #363636;
+          font-size: 14px;
+          font-weight: 600;
+          border: 1px solid #666666;
+          position: relative;
+          font-family: Lato;
+          padding: 0px 12px;
+          text-align: left;
+
+          @media screen and (max-width: 800px) {
+            height: 45px;
+          }
+
+          &.selected {
+            &:after {
+              content: '';
+              position: absolute;
+              top: 28%;
+              right: 4%;
+              background: url(https://usaincreasingly.increasingly.co/Implementation/b58lus/images/img_sprite.svg) -8px -206px/35px no-repeat;
+              height: 20px;
+              width: 20px;
+            }
+          }
+
+          &.not_selected {
+            span {
+              width: 100%;
+            }
+
+            text-align: center;
+          }
+
+          &.main {
+            border: 0px;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            width: auto;
+            margin: auto;
+
+            @media screen and (max-width: 800px) {
+              height: auto;
+              text-align: left;
+              margin: 0;
+            }
+
+            span {
+              width: 100%;
+            }
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &.main.selected {
+            @media screen and (max-width: 800px) {
+              width: fit-content;
+            }
+
+            &.inc_no_edit {
+              &:after {
+                display: none;
+              }
+            }
+
+            span {
+              margin: auto;
+
+              @media screen and (max-width: 800px) {
+                margin: 0;
+                width: fit-content;
+                padding-right: 5px;
+              }
+            }
+
+            &:after {
+              content: 'Edit';
+              width: 40px;
+              line-height: 20px;
+              font-size: 14px;
+              text-decoration: underline;
+              background: 0 0;
+              display: inline-block;
+              position: relative;
+              margin-left: 10px;
+
+              @media screen and (max-width: 800px) {
+                margin-left: 15px;
+              }
+
+              @media screen and (max-width: 480px) {
+                margin-left: 10px;
+              }
+            }
+          }
+
+          &.inc_add_to_cart {
+            background: #363636 !important;
+            color: #fff;
+          }
+
+          span {
+            -webkit-line-clamp: 1;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            height: 20px;
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inc_pdp_bundle_block {
+    .inc_product_block {
+      .inc_product_info_main_block {
+
+        .inc_product_desc_range,
+        .inc_product_desc_title_text {
+          min-height: auto;
+          max-height: initial;
+        }
+
+        .inc_product_img_block .inc_product_img_main_block .inc_product_img_main_img {
+          height: 135px;
+        }
+      }
+    }
+  }
+}
+
+#bundle-disable,
+.modal_btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  padding: 7px;
+  box-shadow: 0px 0px 6px #ddd;
+  margin: 0px !important;
+  // display: none !important;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.ca_bundles .bundle-disable {
+  display: block !important;
+}
+
+.inc_modal_qty {
+  display: flex;
+  background: 0 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    justify-content: flex-start;
+  }
+
+  .inc_modal_qty_input_block {
+    height: 46px;
+    width: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+
+    input {
+      border: 1px solid #949494;
+      text-align: center;
+      background: 0 0;
+      color: #363636;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: Lato, sans-serif;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border-radius: 0;
+      -moz-appearance: textfield;
+      appearance: textfield;
+
+      &:focus {
+        box-shadow: none;
+        border-color: #8f6c2c;
+      }
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  .inc_modal_qty_minus,
+  .inc_modal_qty_plus {
+    height: 46px;
+    width: 46px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #949494;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #f4f4f4;
+      border-color: #949494;
+    }
+  }
+
+  .inc_modal_qty_minus {
+    border-right: none;
+    background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 7px -340px/32px no-repeat transparent;
+  }
+
+  .inc_modal_qty_plus {
+    border-left: none;
+    background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 5px -330px/35px no-repeat transparent;
+  }
+}
+
+// Balsam hills CA code
+.ca_bundles {
+  .inc_modal_qty {
+    display: flex;
+    background: 0 0;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+
+    .inc_modal_qty_input_block {
+      height: 42px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+
+      input {
+        text-align: center;
+        background: 0 0;
+        color: #363636;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Lato, sans-serif;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border-radius: 0;
+        -moz-appearance: textfield;
+        appearance: textfield;
+        border: none;
+
+        &:focus {
+          box-shadow: none;
+          border-color: none;
+        }
+      }
+
+      input[type='number']::-webkit-inner-spin-button,
+      input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    }
+
+    .inc_modal_qty_minus,
+    .inc_modal_qty_plus {
+      height: 42px;
+      width: 42px;
+      border: none;
+      cursor: pointer;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color none;
+
+      &:hover,
+      &:focus {
+        background-color: #e0d2b8;
+        border-color: none;
+      }
+    }
+
+    .inc_modal_qty_minus {
+      border-right: none;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 7px -340px/32px no-repeat #e0d2b8;
+
+    }
+
+    .inc_modal_qty_plus {
+      border-left: none;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 5px -330px/35px no-repeat #e0d2b8;
+    }
+
+    .qty_disable {
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 7px -340px/32px no-repeat #eaeaea;
+      background-color: #eaeaea !important;
+    }
+  }
+}

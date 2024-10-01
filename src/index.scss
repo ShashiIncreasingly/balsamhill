@@ -1,0 +1,40 @@
+.increasingly-slider,
+.increasingly-section-container {
+  // padding: 0px ;
+}
+
+.increasingly-slider #inc_home_page_2 .inc_recs_home_block {
+  background: #ffffff;
+}
+
+
+#inc_empty_cart_2 .inc_recs_block.inc_recs_new_arrival_block {
+  background: #ffffff;
+}
+
+.ca_bundles #inc_empty_cart_2 .inc_recs_block.inc_recs_new_arrival_block {
+  background: transparent;
+}
+
+#inc_content_page_2 .inc_recs_block.inc_recs_home_block {
+  background: #ffffff;
+}
+
+.inc_empty_search .inc_recs_block.inc_recs_product_list_block {
+  background: #ffffff;
+}
+
+#inc_cart_2 .inc_recs_block.inc_recs_new_arrival_block {
+  background: #ffffff;
+}
+
+.ca_bundles #inc_cart_2 .inc_recs_block.inc_recs_new_arrival_block {
+  background: transparent;
+}
+
+.inc_recs_block,
+.inc_af_block {
+  .swiper-wrapper {
+    align-items: flex-end;
+  }
+}

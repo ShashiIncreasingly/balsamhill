@@ -1,0 +1,987 @@
+.ReactModalPortal {
+  .ReactModal__Overlay {
+    z-index: 55555;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+
+    @media screen and (max-width: 1000px) and (orientation: landscape) {
+      overflow: auto !important;
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 850px) {
+      overflow: auto !important;
+    }
+
+    @media screen and (max-width: 800px) {
+      overflow: hidden !important;
+      min-height: 100vh !important;
+    }
+  }
+
+  .ReactModal__Content {
+    position: unset !important;
+    padding: 0 !important;
+    inset: unset !important;
+    border: none !important;
+    background: transparent !important;
+    overflow: unset !important;
+    border-radius: 0 !important;
+    outline: none !important;
+  }
+
+  .inc_modal_parent_block {
+    inset: inherit;
+    min-height: 750px;
+    max-height: 770px;
+    padding: 35px 0 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px;
+    width: 1300px;
+    overflow: hidden;
+    border-radius: 0px;
+    background: #ffffff;
+    position: absolute;
+
+    #bundle-disable {
+      display: none !important;
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 770px) and (min-width: 1220px) {
+      right: 0px;
+      max-height: 790px;
+      transform: translate(0, 0) scale(0.86);
+      top: -30px;
+      left: 0;
+      margin: auto;
+      bottom: auto;
+    }
+
+    @media screen and (max-width: 1360px) {
+      max-height: 770px;
+      width: 85%;
+      max-width: 95%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 95%;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 98%;
+      max-width: 98%;
+    }
+
+    @media screen and (max-width: 800px) {
+      max-height: 90% !important;
+      min-height: 90vh !important;
+      height: 90vh !important;
+      width: 100%;
+      max-width: 100%;
+      background: transparent;
+      border: none;
+      bottom: 0;
+      padding-top: 0px;
+      transform: none;
+      top: auto;
+      left: 0;
+      right: 0;
+      overflow: unset;
+      min-height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 1000px) and (orientation: landscape) {
+      transform: none;
+      top: 45px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    &.mini {
+      height: auto !important;
+      width: 95%;
+      margin: auto;
+      min-height: auto !important;
+      min-width: auto;
+      max-width: initial;
+      max-height: unset !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      right: 0;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+      transition: none;
+      min-height: auto !important;
+
+      @media screen and (max-width: 1000px) and (orientation: landscape) {
+        transform: none;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .inc_product_modal_gallery,
+      .inc_product_header_main_title_block,
+      .inc_product_desc_ratings_block,
+      .inc_product_modal_price_block {
+        display: none !important;
+      }
+
+      .inc_product_modal_content {
+        height: auto !important;
+
+        @media screen and (max-width: 800px) and (orientation: landscape) {
+          max-height: 85vh !important;
+        }
+      }
+
+      .inc_product_modal_right {
+        padding-bottom: 0px !important;
+      }
+    }
+  }
+
+  .inc_product_header_close_button {
+    background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 4px -57px/31px no-repeat;
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+
+    @media screen and (max-width: 800px) {
+      top: -40px;
+      right: 0px;
+      filter: invert(1);
+    }
+  }
+
+  .inc_product_modal_header_main_block {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    .inc_product_header_main_title_block {
+      margin-bottom: 7px;
+      width: 95%;
+      padding: 0px 24px;
+      text-align: left;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      color: #363636;
+      border-bottom: none;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: Libre Baskerville, serif;
+    }
+
+    .inc_product_desc_ratings_block {
+      padding: 0px 24px;
+    }
+
+    .inc_product_header_tabs {
+      border-bottom: 1px solid #999999;
+      display: flex;
+      align-items: center;
+      padding: 0px 70px;
+
+      .inc_product_header_tab {
+        cursor: pointer;
+        padding: 9px 0px;
+        width: auto;
+        line-height: normal;
+        margin: 0px 50px -2px 0px;
+        text-align: center;
+        position: relative;
+        font-weight: 700;
+        font-size: 13px;
+        z-index: 9;
+        color: #363636;
+        border-bottom: 3px solid transparent;
+        outline: none;
+
+        &.inc_active {
+          color: #8f6c2c;
+          border-bottom: 3px solid #8f6c2c;
+        }
+      }
+
+      .inc_product_header_new_tab {
+        color: #8f6c2c;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        outline: none;
+
+        &::before {
+          content: '';
+          background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) -8px -138px/40px no-repeat;
+          height: 16px;
+          width: 25px;
+          cursor: pointer;
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .inc_product_modal_content {
+    display: flex;
+    width: 100%;
+    padding: 15px 24px;
+    box-sizing: border-box;
+    height: calc(100% - 100px);
+
+    @media screen and (max-width: 900px) {
+      padding: 15px 10px;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 0px 0px 50px;
+      overflow: auto;
+      height: 96vh;
+      display: block;
+      background: white;
+
+      @supports (-webkit-touch-callout: none) {
+        height: 90vh;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 93vh;
+
+      @supports (-webkit-touch-callout: none) {
+        height: 90vh;
+      }
+    }
+
+    @media screen and (max-width: 1000px) and (orientation: landscape) {
+      height: 90vh;
+    }
+
+    @media screen and (max-width: 1000px) and (orientation: landscape) {
+      height: 90vh;
+    }
+
+    @supports (-webkit-touch-callout: none) {}
+
+    .inc_product_modal_left {
+      flex-basis: 65%;
+      height: 630px;
+
+      @media screen and (max-width: 1025px) {
+        flex-basis: 62%;
+      }
+
+      @media screen and (max-width: 950px) {
+        flex-basis: 58%;
+      }
+
+      @media screen and (max-width: 800px) {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        height: auto;
+      }
+    }
+
+    .inc_product_modal_right {
+      flex-basis: 35%;
+      max-width: 35%;
+      border-left: 2px solid #f1f1f1;
+      padding: 0 5px 0px 20px;
+
+      @media screen and (max-width: 1380px) {
+        padding: 0 0px 0px 15px;
+      }
+
+      @media screen and (max-width: 1025px) {
+        flex-basis: 38%;
+        max-width: 38%;
+      }
+
+      @media screen and (max-width: 950px) {
+        max-width: 42%;
+        flex-basis: 42%;
+      }
+
+      @media screen and (max-width: 800px) {
+        flex-basis: 100%;
+        padding: 0px 15px 40px;
+        max-width: 100%;
+      }
+
+      .inc_product_header_main_title_block {
+        font-size: 24px;
+        font-family: Libre Baskerville, serif;
+        color: #363636;
+        text-decoration: none;
+        margin-bottom: 15px;
+        display: block;
+        border: none;
+        font-weight: 500;
+      }
+
+
+
+      .inc_product_modal_price_block {
+        .inc_product_modal_regular_price {
+          color: #666666;
+          font-size: 18px;
+
+          &.strikethrough {
+            text-decoration: line-through;
+          }
+        }
+
+        .inc_product_modal_active_price {
+          font-size: 24px;
+          font-weight: bold;
+          margin-left: 5px;
+        }
+
+      }
+    }
+
+    .inc_product_image_gallery {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      @media screen and (max-width: 800px) {
+        flex-direction: column-reverse;
+      }
+
+      .inc_product_image_gallery_block {
+        display: block;
+        border-right: 1px solid #8f6c2c;
+        height: 570px;
+        max-width: 100%;
+        width: 70px;
+        max-height: 94%;
+        display: block;
+        overflow-y: hidden;
+        padding-right: 20px;
+        margin-top: 10px;
+
+        @media screen and (max-width: 1200px) {
+          height: 560px;
+        }
+
+        @media screen and (max-width: 800px) {
+          display: flex;
+          flex-direction: row;
+          width: 90%;
+          height: 100%;
+          margin: auto;
+          margin-top: 15px;
+          border: none;
+          padding: 0px;
+        }
+
+        .inc_product_image_gallery_list_item {
+          height: 60px;
+          width: 50px;
+          min-width: 50px;
+          min-height: 60px;
+          margin-right: 5px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+          overflow: scroll;
+          padding: 4px;
+          border: 1px solid transparent;
+
+          @media screen and (max-width: 800px) {
+            height: 50px;
+            width: 40px;
+            min-width: 30px;
+            min-height: 40px;
+            margin-right: 10px;
+          }
+
+          &.active {
+            border: 1px solid #8f6c2c;
+          }
+        }
+      }
+
+      .inc_product_active_gallery_block {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        gap: 20px;
+        flex-direction: column;
+        position: relative;
+
+        padding-top: 10px;
+
+        @media screen and (max-width: 1680px) {
+          padding: 10px 50px 0;
+        }
+
+        @media screen and (max-width: 800px) {
+          padding: 0;
+        }
+
+        a {
+          border: none;
+          display: block;
+          width: 100%;
+          text-align: center;
+
+          img {
+            max-width: 570px !important;
+            max-height: 530px !important;
+
+            @media screen and (max-width: 1360px) {
+              max-width: calc(100% - 150px) !important;
+            }
+
+            @media screen and (max-width: 1280px) {
+              max-width: calc(100% + -70px) !important;
+            }
+
+            @media screen and (max-width: 1200px) {
+              max-width: calc(100% - 150px) !important;
+            }
+
+            @media screen and (max-width: 1100px) {
+              max-width: calc(100% + -70px) !important;
+            }
+
+            @media screen and (max-width: 600px) {
+              max-width: 100% !important;
+              min-width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .inc_product_message_alert_block {
+      width: 150px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px auto;
+      text-align: center;
+      max-width: 150px;
+      background: #dcedd8;
+      border-radius: 4px;
+    }
+
+    .inc_product_message_alert_text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.006em;
+      color: #363636;
+      font-family: Lato, sans-serif;
+      position: relative;
+      padding-left: 10px;
+
+      &:before {
+        background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 9px -28px/28px no-repeat;
+        height: 30px;
+        width: 46px;
+        content: '';
+        position: absolute;
+        left: -22px;
+        top: 0;
+      }
+    }
+  }
+
+  .inc_product_active_gallery_left,
+  .inc_product_active_gallery_right {
+    background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 10px -237px/35px no-repeat #fff;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 45%;
+    right: 50px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+
+    @media screen and (max-width: 1360px) {
+      right: 10px;
+      top: 40%;
+    }
+
+    &.vertical_left {
+      height: 32px;
+      width: 32px;
+      top: -5px;
+      left: 10px;
+      display: block;
+      cursor: pointer;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 2px -211px/30px no-repeat #fff;
+      transform: rotate(270deg);
+      z-index: 1;
+    }
+
+    &.vertical_right {
+      bottom: -10px;
+      height: 32px;
+      width: 32px;
+      left: 10px;
+      display: block;
+      top: unset;
+      cursor: pointer;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 2px -210px/30px no-repeat #fff;
+      border: 1px solid #ccc;
+      transform: rotate(90deg);
+
+      @media screen and (max-width: 1200px) {
+        bottom: -15px;
+      }
+    }
+  }
+
+  .inc_product_active_gallery_left {
+    right: auto;
+    transform: rotate(180deg);
+    left: 50px;
+
+    @media screen and (max-width: 1360px) {
+      left: 10px;
+    }
+  }
+
+  .inc_modal_attribute_value_block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 0.25rem;
+    padding-left: 2px;
+  }
+
+  .inc_modal_attribute_value_block.combo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    border: 1px solid #8f6c2c;
+  }
+
+  .inc_modal_attribute_values {
+    margin: 0 8px 12px 0;
+    padding: 8px 10px;
+    outline: 1px solid transparent;
+    border: 1px solid #949494;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: initial;
+    font-family: Lato;
+    transition: all 0.2s linear;
+    font-size: 1rem;
+    color: #363636;
+    min-width: 80px;
+
+    @media screen and (max-width: 1360px) {
+      padding: 10px;
+    }
+
+    &:hover {
+      border-color: #666;
+      background-color: #fff;
+      color: #363636;
+      outline-color: #666;
+    }
+    &.foliagetype {
+      width: auto;
+      flex: 0 1 calc(43%);
+      white-space: nowrap;
+      padding: 10px 5px;
+    }
+
+    &.lighttype {
+      padding: 10px;
+    }
+
+    &.size {
+      width: auto;
+      flex: 0 1 55px;
+    }
+
+    &.height {
+      width: auto;
+      flex: 0 1 55px;
+    }
+
+    &.inc_cms {
+      flex: unset;
+    }
+  }
+
+  .inc_modal_attribute_values.combo {
+    border: none;
+  }
+
+  .inc_product_modal_price_block {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    font-family: Lato;
+  }
+
+  .inc_product_modal_regular_price {
+    &.strikethrough {
+      color: inherit;
+      text-decoration: line-through;
+      margin-right: 5px;
+    }
+  }
+
+  .inc_product_modal_regular_price {
+    color: inherit;
+  }
+
+  .inc_product_modal_combo_price {
+    font-size: 14px;
+    font-weight: 700;
+    width: 25%;
+
+    @media screen and (max-width: 1000px) {
+      width: 27%;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 25%;
+    }
+  }
+
+
+
+  .inc_modal_combo_block {
+    overflow: auto;
+    max-height: 278px;
+    padding-right: 3px;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(207, 207, 207);
+    }
+  }
+
+  .inc_modal_combo_block_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    outline: 1px solid transparent;
+    border: 1px solid #949494;
+    padding: 12px 6px;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 10px;
+    cursor: pointer;
+    font-family: Lato;
+    color: #363636;
+
+    @media screen and (max-width: 800px) {
+      padding: 12px 10px;
+    }
+
+    &:hover {
+      border-color: #666;
+      background-color: #fff;
+      color: #363636;
+    }
+
+    &.inc_active {
+      .inc_product_modal_combo_attributes {
+        color: #8f6c2c;
+      }
+
+      border-color: #8f6c2c;
+      background-color: #fff;
+      color: #8f6c2c;
+    }
+
+    &.three {
+
+      .inc_product_modal_combo_attributes,
+      .inc_product_modal_combo_price {
+        width: 33%;
+      }
+    }
+  }
+
+  .inc_product_modal_combo_attributes {
+    width: calc(100% / 4);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    color: inherit;
+
+    &:first-child {
+      word-wrap: break-word !important;
+      word-break: break-word !important;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: calc(100% / 3.7);
+    }
+  }
+
+  .inc_modal_attribute_header_items {
+    width: calc(100% / 4);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato;
+    height: 100%;
+    font-size: 1rem;
+    white-space: nowrap;
+    margin: 0 0px 0px 5px;
+    font-weight: bold;
+  }
+
+  .inc_modal_attributes_block {
+    margin: 20px 0px;
+
+    // @media screen and (max-width: 1440px) {
+    max-height: 400px;
+    overflow: auto;
+    // }
+  }
+
+  .inc_modal_attribute_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 4px 0px;
+
+    &.three {
+      .inc_modal_attribute_header_items {
+        margin: 0;
+      }
+    }
+  }
+
+  .inc_modal_attribute_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+    font-family: Lato, sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .inc_modal_attribute_values.inc_active {
+    font-weight: bold;
+    border-color: #8f6c2c;
+    background-color: #e0d2b8;
+    color: #363636;
+    outline-color: #8f6c2c;
+  }
+
+  .inc_modal_qty {
+    display: flex;
+    background: 0 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+
+    .inc_modal_qty_input_block {
+      height: 46px;
+      width: 55px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+
+      input {
+        border: 1px solid #949494;
+        text-align: center;
+        background: 0 0;
+        color: #363636;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Lato, sans-serif;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border-radius: 0;
+        -moz-appearance: textfield;
+        appearance: textfield;
+
+        &:focus {
+          box-shadow: none;
+          border-color: #8f6c2c;
+        }
+      }
+
+      input[type='number']::-webkit-inner-spin-button,
+      input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    }
+
+    .inc_modal_qty_minus,
+    .inc_modal_qty_plus {
+      height: 46px;
+      width: 46px;
+      border: none;
+      cursor: pointer;
+      border: 1px solid #949494;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: #f4f4f4;
+        border-color: #949494;
+      }
+    }
+
+    .inc_modal_qty_minus {
+      border-right: none;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 7px -340px/32px no-repeat transparent;
+    }
+
+    .inc_modal_qty_plus {
+      border-left: none;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 5px -330px/35px no-repeat transparent;
+    }
+  }
+
+  .inc_modal_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 48px;
+    background: #363636;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+
+    &:hover {
+      box-shadow: 0 0 3px 0 rgba(69, 69, 69, 0.5);
+      color: #fff;
+      background-color: #5a5a5a;
+      border-color: #5a5a5a;
+    }
+  }
+
+  .inc_product_modal_description {
+    width: 100%;
+    z-index: 9;
+    background-color: #ffffff;
+    overflow-y: auto;
+    padding: 25px 15px 10px 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #363636;
+    height: 100%;
+    max-height: 600px;
+    height: 590px;
+
+    h3 {
+      font-family: 'Lato';
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .mod-desc-text p {
+      margin-top: 20px;
+      line-height: 24px;
+      font-size: 16px;
+    }
+
+    .heading-text-2 {
+      font-family: Libre Baskerville, serif;
+      font-size: 16px;
+    }
+
+    ul {
+      padding: 0 20px !important;
+
+      li {
+        list-style: disc !important;
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      height: auto;
+    }
+  }
+}
+
+.inc_modal_full_deatils {
+  a {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0px 30px;
+    font-weight: 600;
+    color: #363636;
+    text-decoration: none;
+    border: none;
+    display: block;
+    border: 1px solid #363636;
+    height: 48px;
+    line-height: 46px;
+  }
+}

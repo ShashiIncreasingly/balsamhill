@@ -1,0 +1,367 @@
+.inc_recs_block {
+  background: #f3f3f3;
+  position: relative;
+  // padding: 20px 0;
+  margin: 0px 0px 0px;
+
+  @media screen and (max-width: 800px) {
+    // padding: 20px 0px;
+    // margin: 10px 0px 10px;
+  }
+
+  &.inc_pdp_page {
+    // margin-top: 30px;
+    background: #ffffff;
+
+    @media screen and (max-width: 800px) {
+      // padding: 0px 15px 0px;
+    }
+
+    &.inc_recs_new_arrival_block {
+      margin-top: 0px;
+
+      @media screen and (max-width: 992px) {
+        // padding: 0px 0px;
+      }
+    }
+  }
+
+  &.inc_content_page {
+    padding: 0px 40px;
+
+    @media screen and (max-width: 1280px) {
+      padding: 0px 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 0px 16px;
+    }
+  }
+
+  .inc_af_title_text_block {
+    font-weight: 500;
+    font-size: 32px;
+    color: #363636;
+    text-align: center;
+    padding: 5px 0;
+    font-family: 'Libre Baskerville';
+    margin: 0px auto 20px;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 360px) {
+      margin: 0 auto 10px;
+      font-size: 22px;
+    }
+  }
+
+  .inc_af_bundle_product_block {
+    position: relative;
+    // padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1920px;
+
+    &.inc_single {
+      .inc_product_showcase_block {
+        max-width: 316px;
+
+        @media screen and (max-width: 992px) {
+          max-width: 280px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      // overflow: auto;
+      // padding-bottom: 5px;
+      display: flex;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+  }
+
+  .inc_af_bundle_nav_right,
+  .inc_af_bundle_nav_left {
+    background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 16px -232px/35px no-repeat #fff;
+    height: 65px;
+    width: 65px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+
+    // @media screen and (max-width: 992px) {
+    //   display: none;
+    // }
+    @media screen and (max-width: 960px) {
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 6px -242px/35px no-repeat #fff;
+      height: 45px;
+      width: 45px;
+      right: -16px;
+    }
+
+    &.inc_disabled {
+      opacity: 0;
+    }
+  }
+
+  .inc_af_bundle_nav_left {
+    left: 10px;
+    right: auto;
+    transform: rotate(180deg);
+
+    @media screen and (max-width: 960px) {
+      left: -16px;
+    }
+  }
+
+  .inc_af_bundle_product_block {
+    @media screen and (max-width: 960px) {
+      // padding-left: 5px;
+      // padding-right: 15px;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      // overflow: auto;
+      // padding-bottom: 5px;
+
+      @supports (-webkit-touch-callout: none) {
+        // padding-bottom: 10px;
+      }
+    }
+
+
+
+    .inc_product_showcase_block {
+      &:last-child {
+        .inc_product_block {
+          margin-right: 0;
+        }
+      }
+
+      .inc_product_block {
+        padding: 0px 10px;
+        width: 100%;
+        margin: 0 auto;
+        background: transparent;
+
+        @media screen and (max-width: 960px) {
+          padding-left: 0;
+          padding-right: 15px;
+        }
+
+        &:hover {
+          .inc_product_img_block .inc_product_img_main_block .inc_product_img_main_img {
+            img {
+              opacity: 0.9;
+            }
+          }
+        }
+
+        // @media screen and (max-width: 992px) {
+        //   width: 260px;
+        // }
+
+        // @media screen and (max-width: 800px) {
+        //   width: 280px;
+        // }
+
+        // @media screen and (max-width: 480px) {
+        //   width: 240px;
+        // }
+
+        // @media screen and (max-width: 370px) {
+        //   width: 210px;
+        // }
+
+        .inc_product_info_main_block {
+          @media screen and (max-width: 800px) {
+            display: block;
+          }
+
+          .inc_product_desc_block {
+            text-align: left;
+
+            @media screen and (max-width: 800px) {
+              padding: 0px;
+            }
+
+            .inc_product_desc_title_text {
+              min-height: 22px;
+              max-height: 22px;
+              margin-bottom: 5px;
+              -webkit-line-clamp: 1;
+            }
+
+            .inc_product_desc_ratings_block {
+              justify-content: flex-start;
+            }
+
+            .inc_product_desc_price_block {
+              justify-content: flex-start;
+            }
+
+            .inc_modal_block .inc_modal_select_button.not_selected {
+              width: 143px;
+              height: 41px;
+              background: #ffffff;
+              border: 1px solid #666666;
+              line-height: 20px;
+              margin-bottom: 2px;
+            }
+          }
+
+          .inc_product_img_block .inc_product_img_main_block .inc_product_img_main_img {
+            height: auto;
+
+            @media screen and (max-width: 800px) {
+              width: 100%;
+            }
+
+            img {
+              max-width: 99.9%;
+
+              @media screen and (max-width: 800px) {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.inc_client_softcart {
+  .inc_recs_block.inc_recs_new_arrival_block {
+    // padding: 0px 0 10px !important;
+    // margin-bottom: 20px;
+
+    // @media screen and (max-width: 800px) {
+    //   margin: 10px 0;
+    // }
+
+    .inc_af_title_text_block {
+      padding: 0px 0;
+    }
+
+    .inc_af_bundle_product_block {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .inc_af_bundle_nav_right,
+    .inc_af_bundle_nav_left {
+      height: 40px;
+      width: 40px;
+      top: 25%;
+      right: -8px;
+      background: url(https://usaincreasingly.increasingly.co/Clients/balsam-vite/uat/img_sprite.svg) 2px -245px/35px no-repeat #fff;
+
+      @media screen and (max-width: 992px) {
+        right: -16px;
+      }
+    }
+
+    .inc_af_bundle_nav_left {
+      left: -8px;
+
+      @media screen and (max-width: 992px) {
+        left: -16px;
+      }
+    }
+  }
+}
+
+.increasingly-slider.increasinglySection_containerStyle__Nsu8g {
+  margin-bottom: 0px;
+}
+
+#inc_content_page_2 {
+  .inc_recs_block.inc_recs_home_block {
+    // margin: 10px 0;
+  }
+}
+
+// #inc_plp_2 {
+//   .inc_recs_block.inc_recs_product_list_block {
+//     background: #ffffff;
+//   }
+// }
+
+#inc_plp_1 {
+  .inc_recs_block {
+    .inc_af_bundle_nav_right {
+      right: -40px;
+      top: 48%;
+
+      @media screen and (max-width: 960px) {
+        right: -16px
+      }
+    }
+
+    .inc_af_bundle_nav_left {
+      left: -40px;
+      top: 48%;
+
+      @media screen and (max-width: 960px) {
+        left: -16px;
+      }
+    }
+
+    .inc_af_bundle_product_block {
+      max-width: 1250px;
+      margin: auto;
+
+      @media screen and (max-width: 1350px) {
+        max-width: 1150px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        max-width: 950px;
+      }
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+        margin-left: 0px;
+        overflow: unset;
+      }
+
+      .inc_product_showcase_block .inc_product_block {
+        padding: 16px;
+        width: 94%;
+        margin: 0 auto;
+        background: white;
+
+        @media screen and (max-width: 1350px) {
+          width: 95%;
+        }
+
+        @media screen and (max-width: 992px) {
+          // width: 260px;
+          // margin-right: 10px;
+        }
+
+        .inc_product_info_main_block {
+          .inc_product_img_block .inc_product_img_main_block .inc_product_img_main_img {
+            height: 265px;
+          }
+
+          .inc_product_desc_block .inc_modal_block .inc_modal_select_button {
+            width: 100%;
+            height: 48px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
